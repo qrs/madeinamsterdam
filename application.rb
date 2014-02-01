@@ -25,7 +25,7 @@ end
 
 post '/about.html' do
   if params[:company_name].nil? || params[:company_website].nil? || params[:name].nil? || params[:email].nil? || params[:logo].nil?
-    @errorMessage   = "Please fil in all fields."
+    @errorMessage   = "Please fill in all fields."
   else
     @mailconfig = {
       :to => 'info@madeinamsterd.am',
